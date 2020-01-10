@@ -95,14 +95,7 @@ Terms Privacy Cookies
       return char.match(/[a-zA-Z0-9]/)
     }
 
-    const result = everything.filter(char => {
-      //if that character is a a-zA-Z0-9, then we want to keep it 
-      if (char.match(/[a-zA-Z0-9]/)) {
-        return true;
-      } else {
-        return false;
-      } 
-    });
+    const result = everything.filter(isValidChar)
 
     console.log(result);
   </script>
