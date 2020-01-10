@@ -94,10 +94,15 @@ Terms Privacy Cookies
       return char.match(/[a-zA-Z0-9]/)
     }
 
-    const result = text
-    .split('')
-    .filter(isValidChar)
+    //function lowercase(char) {
+    //  return char.toLowerCase();
+    //}
+    const lowercase = char => char.toLowerCase();
 
+    const result = text
+    .split('') //split each character into an item of an array
+    .filter(isValidChar) 
+    .map(lowercase) //convert every letter to lowercase (map over the lowercase)
     console.log(result);
   </script>
 </body>
