@@ -93,15 +93,14 @@ Terms Privacy Cookies
     const everything = text.split('');
     const result = everything.filter(char => {
       //if that character is a a-zA-Z0-9, then we want to keep it 
-      if(char.match(/[a-z]/)) {
+      if (char.match(/[a-zA-Z0-9]/)) {
         return true;
       } else {
         return false;
       }
-      }
     });
 
-
+    console.log(result);
   </script>
 </body>
 
