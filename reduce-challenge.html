@@ -90,10 +90,10 @@ Terms Privacy Cookies
 © 2005-2020 Mozilla and individual contributors. Content is available under these licenses.
     `;
 
-    const everything = text.split('');
     function isValidChar(char) {
       return char.match(/[a-zA-Z0-9]/)
     }
+    const everything = text.split('');
 
     const result = everything.filter(isValidChar)
 
