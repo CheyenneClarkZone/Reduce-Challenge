@@ -99,6 +99,10 @@ Terms Privacy Cookies
     //}
     const lowercase = char => char.toLowerCase();
 
+    function instanceCounter(counts, char) {
+      count[char] ? count[char] + 1 : count[char] = 1;
+    }
+
     const result = text
     .split('') //split each character into an item of an array
     .filter(isValidChar) 
