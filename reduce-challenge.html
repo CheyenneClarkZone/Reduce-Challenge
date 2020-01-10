@@ -93,9 +93,10 @@ Terms Privacy Cookies
     function isValidChar(char) {
       return char.match(/[a-zA-Z0-9]/)
     }
-    const everything = text.split('');
 
-    const result = everything.filter(isValidChar)
+    const result = text
+    .split('')
+    .filter(isValidChar)
 
     console.log(result);
   </script>
